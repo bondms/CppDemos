@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "logger.h"
 
 #include "lib/escaper.h"
@@ -128,7 +130,7 @@ namespace Logger
         };
 
         std::unique_ptr<Impl> singleton_impl{};
-    } // namespace
+    }  // namespace
 
     const char* AsString(Severity severity) noexcept
     {

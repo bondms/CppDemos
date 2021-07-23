@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/shared_ptr.h"
 
 #include <gmock/gmock.h>
@@ -13,7 +15,7 @@ namespace
     {
     };
 
-} // namespace
+}  // namespace
 
 TEST_F(SharedPtrTestFixture, BadWithLongEnoughWait)
 {

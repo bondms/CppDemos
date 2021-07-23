@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/realign.h"
 
 #include <gmock/gmock.h>
@@ -66,7 +68,7 @@ namespace
         public ::testing::TestWithParam<TestParameter>
     {
     };
-} // namespace
+}  // namespace
 
 INSTANTIATE_TEST_SUITE_P(simple, TestFixture, ::testing::ValuesIn(test_parameters));
 

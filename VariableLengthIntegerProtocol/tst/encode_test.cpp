@@ -1,29 +1,31 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/encode.h"
 
 #include <gmock/gmock.h>
 
 namespace
 {
-    struct Parameters
+
+struct Parameters {
+    Parameters(size_t _input, std::vector<uint8_t> _expected) :
+        input{_input},
+        expected{_expected}
     {
-        Parameters(size_t _input, std::vector<uint8_t> _expected) :
-            input{_input},
-            expected{_expected}
-        {
-        }
+    }
 
-        size_t input;
-        std::vector<uint8_t> expected;
-    };
+    size_t input;
+    std::vector<uint8_t> expected;
+};
 
-    class EncodeTestFixture :
-        public testing::TestWithParam<Parameters>
-    {
-    };
-} // namespace
-
-TEST_P(EncodeTestFixture, Simple)
+class EncodeTestFixture :
+    public testing::TestWithParam<Parameters>
 {
+};
+
+}  // namespace
+
+TEST_P(EncodeTestFixture, Simple) {
     auto param{ GetParam() };
     EXPECT_EQ(param.expected, Encode(param.input));
 }

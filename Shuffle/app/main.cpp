@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/shuffle.h"
 
 #include <cstdlib>
@@ -19,7 +21,7 @@ namespace
         }
         std::cout << "\n\n";
     }
-} // namespace
+}  // namespace
 
 int main()
 {

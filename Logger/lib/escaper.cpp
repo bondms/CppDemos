@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/escaper.h"
 
 #include <algorithm>
@@ -46,7 +48,7 @@ namespace Escaper
                 << static_cast<unsigned int>(static_cast<unsigned char>(raw));
             return oss.str();
         }
-    } // namespace
+    }  // namespace
 
     std::string Escaped(const std::string & raw)
     {

@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #pragma once
 
 #include <algorithm>
@@ -82,4 +84,4 @@ namespace Shuffle
             return N;
         }
     };
-} // namespace Shuffle
+}  // namespace Shuffle

@@ -1,3 +1,5 @@
+// Copyright 2021 Mark Bond
+
 #include "lib/event.h"
 #include "lib/shared_ptr.h"
 
@@ -63,4 +65,4 @@ namespace SharedPtr
             return std::move(dataPtr->result_);
         }
     }
-} // namespace SharedPtr
+}  // namespace SharedPtr
