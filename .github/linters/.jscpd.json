@@ -1,12 +1,12 @@
 {
-    "threshold": 0,
-    "reporters": [
-      "consoleFull"
-    ],
-    "ignore": [
-      "**/__snapshots__/**",
-      "**/*_test.cpp",
-      "**/*Test.cpp"
-    ],
-    "absolute": true
-  }
+  "threshold": 0,
+  "reporters": [
+    "consoleFull"
+  ],
+  "ignore": [
+    "**/__snapshots__/**",
+    "**/*_test.cpp",
+    "**/*Test.cpp"
+  ],
+  "absolute": true
+}
