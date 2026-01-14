@@ -6,7 +6,7 @@ set -e
 set -o pipefail
 set -u
 
-HERE="$(readlink -f "$(dirname "$0")")"
+HERE="$(readlink --canonicalize-existing "$(dirname "$0")")"
 [[ -d "${HERE}" ]] || exit 1
 
 pushd "${HERE}/." || exit 1
